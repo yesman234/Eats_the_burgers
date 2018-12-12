@@ -1,11 +1,11 @@
 <h1>burger!</h1>
 
-<h2>burger that are not Served!</h2>
+<h2>in window</h2>
 
 <ul>
   {{#each burger}}
     {{#unless Served}}
-      {{> burger/burgers-block sleep=true}}
+      {{> burger/burgers-block Served=true}}
     {{/unless}}
   {{/each}}
 </ul>
@@ -15,12 +15,12 @@
 <ul>
   {{#each burger}}
     {{#if Served}}
-      {{> burger/burgers-block sleep=false}}
+      {{> burger/burgers-block Served=false}}
     {{/if}}
   {{/each}}
 </ul>
 
-<h2>Add a Burger</h2>
+<h2>add a burger</h2>
 <form class="create-form">
 
   <div class="form-group">
@@ -29,8 +29,8 @@
   </div>
 
   <div class="form-group">
-    <label for="Served">Served?</label><br>
-    <input type="radio" name="Served" value="1" checked> Served!<br>
+    <label for="Served">in window?</label><br>
+    <input type="radio" name="Served" value="1" checked> In window!<br>
     <input type="radio" name="Served" value="0"> Already Eaten
   </div>
 
