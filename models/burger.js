@@ -25,4 +25,4 @@ var burger = {
 };
 
 // Export the database functions for the controller (BurgersController.js).
-module.exports = burger;
+module.exports = burgers_controller.js;
