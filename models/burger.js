@@ -7,8 +7,8 @@ var burger = {
     });
   },
   // The variables cols and vals are arrays.
-  insertOne: function(burger_Name, cb) {
-    orm.insertOne(burger_Name, function(res) {
+  insertOne: function(burger_name, cb) {
+    orm.insertOne(burger_name, function(res) {
       cb(res);
     });
   },
